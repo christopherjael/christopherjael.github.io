@@ -1,0 +1,88 @@
+/* VARIABLES */
+/* MIXIN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+header .slider-left {
+  flex: 1;
+}
+header .slider-left .nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+header .slider-left .nav img {
+  height: 30px;
+}
+header .slider-left .title {
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+header .slider-left .title small {
+  color: #606366;
+  font-size: 1rem;
+}
+header .slider-left .title span {
+  color: #000;
+}
+header .slider-left .title h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+header .slider-left .title img {
+  position: relative;
+  top: 200px;
+  transform: scale(2);
+  animation: up-down 0.5s ease alternate infinite;
+}
+header .slider-center img {
+  width: 700px;
+  height: 100%;
+}
+header .slider-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .slider-right svg {
+  width: 25px;
+  height: auto;
+  margin: 0.6rem;
+  fill: #606366;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+}
+main section {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 3rem;
+}
+/* ANIMATIONS */
+@keyframes up-down {
+  to {
+    position: relative;
+    top: 190px;
+  }
+  from {
+    position: relative;
+    top: 200px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
