@@ -84,5 +84,109 @@ main section {
     top: 200px;
   }
 }
+/* MEDIA QUERY */
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header .slider-left {
+    flex: 1;
+  }
+  header .slider-left .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+  }
+  header .slider-left .nav img {
+    height: 30px;
+  }
+  header .slider-left .title {
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+  header .slider-left .title small {
+    color: #606366;
+    font-size: 1rem;
+  }
+  header .slider-left .title span {
+    color: #000;
+  }
+  header .slider-left .title h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  header .slider-left .title img {
+    display: none;
+    position: relative;
+    top: 200px;
+    transform: scale(2);
+    animation: up-down 0.5s ease alternate infinite;
+  }
+  header .slider-center img {
+    width: 95%;
+    margin-left: 10px;
+    height: 350px;
+  }
+  header .slider-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header .slider-right svg {
+    width: 25px;
+    height: auto;
+    margin: 0.6rem;
+    fill: #606366;
+    cursor: pointer;
+  }
+
+  main {
+    width: 100%;
+  }
+  main section {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 3rem;
+  }
+  main section[role=about-me] h2 {
+    text-align: center;
+    color: #0E6EFD;
+    margin-bottom: 6rem;
+  }
+  main section[role=about-me] .card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main section[role=about-me] .card-container .card-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px #E34F26;
+    border-radius: 14px;
+  }
+  main section[role=about-me] .card-container .card-skill .card-img {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: -67px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: solid 2px #E34F26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section[role=about-me] .card-container .card-skill .card-img img {
+    width: 90px;
+    height: 90px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
