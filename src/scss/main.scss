@@ -196,37 +196,27 @@ main{
     
         section[role='about-me']{
             h2{
+                font-size: 2.2rem;
                 text-align: center;
                 color: $blue-color;
-                margin-bottom: 6rem;
             }
 
             .card-container{
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(1, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
 
                 .card-skill{
+                    border-radius: 100%;
+                    margin: auto;
                     display: flex;
-                    flex-direction: column;
+                    justify-content: center;
                     align-items: center;
-                    border: solid 2px #E34F26;
-                    border-radius: 14px;
-                    .card-img{
-                        width: 130px;
-                        height: 130px;
-                        position: relative;
-                        top: -67px;
-                        border-radius: 100%;
-                        background-color: $white-color;
-                        border: solid 2px #E34F26;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        img{
-                            width: 90px;
-                            height: 90px;
-                        }
+                    img{
+                        margin: .8em;
+                        width: 75px;
+                        height: 75px;
                     }
                 }
             }

@@ -155,37 +155,27 @@ main section {
     margin-top: 3rem;
   }
   main section[role=about-me] h2 {
+    font-size: 2.2rem;
     text-align: center;
     color: #0E6EFD;
-    margin-bottom: 6rem;
   }
   main section[role=about-me] .card-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
   main section[role=about-me] .card-container .card-skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 2px #E34F26;
-    border-radius: 14px;
-  }
-  main section[role=about-me] .card-container .card-skill .card-img {
-    width: 130px;
-    height: 130px;
-    position: relative;
-    top: -67px;
     border-radius: 100%;
-    background-color: #fff;
-    border: solid 2px #E34F26;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  main section[role=about-me] .card-container .card-skill .card-img img {
-    width: 90px;
-    height: 90px;
+  main section[role=about-me] .card-container .card-skill img {
+    margin: 0.8em;
+    width: 75px;
+    height: 75px;
   }
 }
 
