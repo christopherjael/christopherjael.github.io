@@ -7,6 +7,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+/* PC */
 header {
   width: 100%;
   height: 100vh;
@@ -43,8 +44,7 @@ header .slider-left .title h2 {
   font-size: 2rem;
 }
 header .slider-left .title img {
-  position: relative;
-  top: 200px;
+  display: none;
   transform: scale(2);
   animation: up-down 0.5s ease alternate infinite;
 }
@@ -73,6 +73,122 @@ main section {
   width: 90%;
   margin-top: 3rem;
 }
+main section[role=about-me] h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #0E6EFD;
+  font-size: xx-large;
+  margin-bottom: 1rem;
+}
+main section[role=about-me] .d-flex {
+  margin: 0 auto;
+  display: flex;
+}
+main section[role=about-me] div:first-child {
+  width: 1000px;
+  flex: 1;
+}
+main section[role=about-me] div:last-child {
+  margin: auto;
+  flex: 2;
+  width: 1000px;
+  padding: 1rem;
+}
+main section[role=about-me] p {
+  margin-top: 0.5rem;
+}
+main section[role=about-me] img {
+  width: 400px;
+  height: auto;
+}
+main section[role=portafolio] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section[role=portafolio] h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #0E6EFD;
+  font-size: xx-large;
+  margin-bottom: 1rem;
+}
+main section[role=portafolio] img {
+  width: 80%;
+  height: 500px;
+}
+main section[role=portafolio] h4 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #606366;
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+main section[role=skills] h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #0E6EFD;
+  font-size: xx-large;
+  margin-bottom: 1rem;
+}
+main section[role=skills] .card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+main section[role=skills] .card-container .card-skill {
+  border-radius: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section[role=skills] .card-container .card-skill img {
+  margin: 0.8em;
+  width: 75px;
+  height: 75px;
+}
+main section[role=contact-me] {
+  margin: inherit 0;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: #0E6EFD;
+}
+main section[role=contact-me] h2 {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3;
+  color: #fff;
+}
+main section[role=contact-me] .form-control {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+footer {
+  color: #606366;
+  font-size: medium;
+  text-align: center;
+  padding: 1rem 0;
+}
+
 /* ANIMATIONS */
 @keyframes up-down {
   to {
@@ -122,34 +238,43 @@ main section {
     width: 95%;
     margin-top: 4rem;
   }
-  main section[role=about-me] h2 {
-    text-align: center;
-    color: #0E6EFD;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+  main section[role=about-me] .d-flex {
+    display: flex;
+    flex-direction: column;
   }
-  main section[role=about-me] img {
-    width: 100%;
-    border-radius: 14px;
-    margin-bottom: 1rem;
+  main section[role=about-me] div:first-child {
+    width: auto;
+    flex: 1;
+    margin: 0;
+    padding: 0;
   }
-  main section[role=about-me] h3 {
-    font-weight: 100;
-    font-size: large;
-    line-height: 1.5;
+  main section[role=about-me] div:last-child {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex: 2;
   }
   main section[role=about-me] p {
     text-align: justify;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+  }
+  main section[role=about-me] h2 {
+    font-size: x-large;
+  }
+  main section[role=about-me] img {
+    width: 100%;
+    height: auto;
   }
   main section[role=portafolio] h2 {
     text-align: center;
     color: #0E6EFD;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    font-size: x-large;
   }
   main section[role=portafolio] img {
     width: 100%;
+    height: auto;
   }
   main section[role=portafolio] h4 {
     text-transform: uppercase;
@@ -158,6 +283,7 @@ main section {
     margin-bottom: 2rem;
   }
   main section[role=skills] h2 {
+    font-size: x-large;
     text-align: center;
     color: #0E6EFD;
     text-transform: uppercase;
@@ -189,6 +315,7 @@ main section {
     background-color: #0E6EFD;
   }
   main section[role=contact-me] h2 {
+    font-size: x-large;
     text-transform: uppercase;
     text-align: center;
     line-height: 3;
