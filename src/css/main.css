@@ -85,65 +85,33 @@ main section {
   }
 }
 /* MEDIA QUERY */
+/* SMARTPHONE ADAPTER */
 @media screen and (max-width: 767px) {
   header {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-  }
-  header .slider-left {
-    flex: 1;
-  }
-  header .slider-left .nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0.5rem;
-  }
-  header .slider-left .nav img {
-    height: 30px;
+    /* SOCIAL ICON */
   }
   header .slider-left .title {
-    height: 93%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-  header .slider-left .title small {
-    color: #606366;
-    font-size: 1rem;
-  }
-  header .slider-left .title span {
-    color: #000;
-  }
-  header .slider-left .title h2 {
-    text-transform: uppercase;
-    font-size: 2rem;
+    text-align: center;
+    margin: 5rem auto;
+    padding: 0;
+    /* SVG ARROW-DOWN */
   }
   header .slider-left .title img {
     display: none;
-    position: relative;
-    top: 200px;
-    transform: scale(2);
-    animation: up-down 0.5s ease alternate infinite;
+  }
+  header .slider-center {
+    width: 100%;
   }
   header .slider-center img {
-    width: 95%;
-    margin-left: 10px;
-    height: 350px;
+    width: 98%;
   }
   header .slider-right {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-  }
-  header .slider-right svg {
-    width: 25px;
-    height: auto;
-    margin: 0.6rem;
-    fill: #606366;
-    cursor: pointer;
   }
 
   main {
@@ -151,32 +119,134 @@ main section {
   }
   main section {
     margin: 0 auto;
-    width: 90%;
-    margin-top: 3rem;
+    width: 95%;
+    margin-top: 4rem;
   }
   main section[role=about-me] h2 {
-    font-size: 2.2rem;
     text-align: center;
     color: #0E6EFD;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
   }
-  main section[role=about-me] .card-container {
+  main section[role=about-me] img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+  }
+  main section[role=about-me] h3 {
+    font-weight: 100;
+    font-size: large;
+    line-height: 1.5;
+  }
+  main section[role=about-me] p {
+    text-align: justify;
+    margin-top: 1rem;
+  }
+  main section[role=portafolio] h2 {
+    text-align: center;
+    color: #0E6EFD;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  main section[role=portafolio] img {
+    width: 100%;
+  }
+  main section[role=portafolio] h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #606366;
+    margin-bottom: 2rem;
+  }
+  main section[role=skills] h2 {
+    text-align: center;
+    color: #0E6EFD;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  main section[role=skills] .card-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
-  main section[role=about-me] .card-container .card-skill {
+  main section[role=skills] .card-container .card-skill {
     border-radius: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  main section[role=about-me] .card-container .card-skill img {
+  main section[role=skills] .card-container .card-skill img {
     margin: 0.8em;
     width: 75px;
     height: 75px;
   }
+  main section[role=contact-me] {
+    margin: inherit 0;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    background-color: #0E6EFD;
+  }
+  main section[role=contact-me] h2 {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3;
+    color: #fff;
+  }
+  main section[role=contact-me] .form-control {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  footer {
+    color: #606366;
+    font-size: small;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+.btn {
+  width: 90%;
+  margin: auto;
+  display: block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
 }
 
 /*# sourceMappingURL=main.css.map */
